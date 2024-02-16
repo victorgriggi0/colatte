@@ -1,0 +1,26 @@
+.header {
+  height: 80vh;
+  display: flex;
+  align-items: end;
+  background: #191919 no-repeat 50% 50%;
+  background-size: cover;
+  filter: grayscale(100%);
+  border-bottom: 0.5rem solid var(--white);
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.625rem 0;
+}
+
+.list a {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  padding: 0 0.875rem;
+  color: var(--white);
+}
