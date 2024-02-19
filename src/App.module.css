@@ -1,46 +1,58 @@
-.ourSectors h2 {
+.ourSectors h2,
+.contact h2 {
   text-align: center;
   font-size: 3.75rem;
   font-weight: 500;
   line-height: 3.75rem;
   color: var(--gray-800);
   text-transform: lowercase;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
-.ourSectors div {
+.ourSectors > div {
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
   gap: 2.5rem;
 }
 
+.about {
+  background-color: var(--white-300);
+}
+
+.contact {
+  margin: 100px 0;
+}
+
 @media (max-width: 1199px) {
-  .ourSectors h2 {
+  .ourSectors h2,
+  .contact h2 {
     font-size: 3.438rem;
     line-height: 3.438rem;
   }
 }
 
 @media (max-width: 991px) {
-  .ourSectors h2 {
+  .ourSectors h2,
+  .contact h2 {
     font-size: 3.188rem;
     line-height: 3.188rem;
   }
 }
 
-@media (max-width: 860px) {
-  .ourSectors div {
+@media (max-width: 1475px) {
+  .ourSectors > div {
     grid-template-columns: repeat(2, minmax(auto, 1fr));
   }
 }
 
-@media (max-width: 768px) {
-  .ourSectors h2 {
+@media (max-width: 860px) {
+  .ourSectors h2,
+  .contact h2 {
     font-size: 2.938rem;
     line-height: 2.938rem;
   }
 
-  .ourSectors div {
+  .ourSectors > div {
     grid-template-columns: repeat(1, minmax(auto, 1fr));
   }
 }
